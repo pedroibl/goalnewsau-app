@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    \"start\": \"next start\",\n    \"pages:build\": \"npx @open-next/cli@latest build --platform cloudflare-pages\",\n    \"lint\": \"eslint\"
+    "start": "next start",
+    "pages:build": "npx @open-next/cli@latest build --platform cloudflare-pages",
     "lint": "eslint"
   },
   "dependencies": {
