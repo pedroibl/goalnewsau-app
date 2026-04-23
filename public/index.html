@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GoalNews AU - Australian Football Scores & News</title>
+<style>
+body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background: linear-gradient(to bottom, #f0f8ff, #e6f3ff); color: #333; }
+header { text-align: center; background: #0066cc; color: white; padding: 30px 20px; border-radius: 10px; margin-bottom: 30px; }
+h1 { margin: 0; font-size: 2.5em; }
+.tagline { font-size: 1.2em; opacity: 0.9; }
+.scores { background: white; border-radius: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+.score { display: flex; justify-content: space-between; padding: 15px; margin: 10px 0; background: #e8f4f8; border-left: 5px solid #0066cc; border-radius: 5px; }
+.team { font-weight: bold; }
+.status { color: #0066cc; }
+.footer { text-align: center; margin-top: 40px; font-size: 0.9em; color: #666; }
+</style>
+</head>
+<body>
+<header>
+<h1>🦘 GoalNews AU</h1>
+<p class="tagline">Live A-League, NRL & Matildas Scores | Aussie Football News</p>
+</header>
+<section class="scores">
+<h2>Latest Scores</h2>
+<div class="score">
+<span class="team">Melbourne Victory</span>
+<span>2 - 1</span>
+<span class="team">Sydney FC</span>
+<span class="status">(Fornaroli 78')</span>
+</div>
+<div class="score">
+<span class="team">Melbourne Storm</span>
+<span>24 - 12</span>
+<span class="team">Broncos</span>
+<span class="status">(Atkinson 45', 62')</span>
+</div>
+<div class="score">
+<span class="team">Matildas</span>
+<span>3 - 0</span>
+<span class="team">Japan</span>
+<span class="status">Friendly Win!</span>
+</div>
+</section>
+<div class="footer">
+<p>&copy; 2026 GoalNews AU. Built with ❤️ in Melbourne.</p>
+</div>
+<script>
+/* Mock live update */
+setInterval(() => {
+  const scores = document.querySelector('.scores');
+  scores.innerHTML += '<div class="score"><span class="team">Live Alert</span><span>-</span><span>Goal!</span><span class="status">Updating...</span></div>';
+}, 30000);
+console.log('GoalNews AU loaded!');
+</script>
+</body>
+</html>
