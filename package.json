@@ -9,6 +9,8 @@
     "cf:build": "opennextjs-cloudflare build",
     "cf:preview": "opennextjs-cloudflare build && wrangler dev",
     "cf:deploy": "opennextjs-cloudflare build && wrangler deploy",
+    "pages:build": "opennextjs-cloudflare build && bash scripts/pages-assemble.sh",
+    "pages:deploy": "npm run pages:build && wrangler pages deploy .open-next/pages-out --project-name goalnewsau --branch main",
     "lint": "eslint"
   },
   "dependencies": {
